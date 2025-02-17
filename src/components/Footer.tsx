@@ -11,7 +11,7 @@ export default function Footer() {
           </p>
           <div className="flex flex-wrap gap-4 mt-3">
             <a
-              href=""
+              href="https://portfolio-web-green-three.vercel.app/"
               className="flex items-center gap-2 hover:text-blue-400 transition"
             >
               <FaGlobe /> Website
@@ -23,13 +23,15 @@ export default function Footer() {
               <FaEnvelope /> Email
             </a>
             <a
-              href=""
+              target="_blank"
+              href="https://www.linkedin.com/in/jaya-patidar-39b7381aa"
               className="flex items-center gap-2 hover:text-blue-500 transition"
             >
               <FaLinkedin /> LinkedIn
             </a>
             <a
-              href=""
+              target="_blank"
+              href="https://github.com/jpatidar-1998"
               className="flex items-center gap-2 hover:text-gray-400 transition"
             >
               <FaGithub /> GitHub
@@ -42,24 +44,26 @@ export default function Footer() {
         <div className="mb-4">
           <h3 className="text-xl font-semibold">📜 Quick Links</h3>
           <div className="flex flex-wrap gap-3 mt-2">
-            {["Home", "About", "Projects", "Skills", "Contact"].map((link) => (
+            {[
+              { name: "Home", url: "/" },
+              { name: "About", url: "/about" },
+              { name: "Projects", url: "/projects" },
+              { name: "Skills", url: "/skills" },
+              { name: "Contact", url: "/contact" }
+            ].map((link) => (
               <a
-                key={link}
-                href={`#${link.toLowerCase()}`}
+                key={link.name}
+                href={link.url}
                 className="text-stone-300 hover:text-blue-400 transition"
               >
-                📌 {link}
+                📌 {link.name}
               </a>
             ))}
           </div>
         </div>
 
         <p className="text-stone-400 text-sm mt-4">
-          📄
-          <a href="/privacy-policy" className="hover:text-blue-400 transition">
-            Privacy Policy
-          </a>
-          | © 2024 Jaya Patidar. All rights reserved.
+          Copyright © 2024 Jaya Patidar. All rights reserved.
         </p>
       </div>
     </footer>

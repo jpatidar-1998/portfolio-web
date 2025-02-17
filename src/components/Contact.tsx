@@ -28,33 +28,46 @@ export default function Contact() {
         >
           <FaEnvelope />
         </a>
-        <a href="" target="_blank" className="hover:text-blue-400 transition">
+        <a
+          href="https://www.linkedin.com/in/jaya-patidar-39b7381aa"
+          target="_blank"
+          className="hover:text-blue-400 transition"
+        >
           <FaLinkedin />
         </a>
-        <a href="" target="_blank" className="hover:text-gray-400 transition">
+        <a
+          href="https://github.com/jpatidar-1998"
+          target="_blank"
+          className="hover:text-gray-400 transition"
+        >
           <FaGithub />
         </a>
       </div>
 
       <div className="w-full max-w-md bg-stone-800 p-6 rounded-lg shadow-md">
         <h3 className="text-xl font-semibold mb-4">✉️ Send Me a Message</h3>
+        {status && <p className="mb-4 text-center text-yellow-300">{status}</p>}
         <form className="flex flex-col gap-4">
           <input
             type="text"
+            name="name"
             placeholder="Your Name"
             className="p-3 bg-stone-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400 transition"
           />
           <input
             type="email"
+            name="email"
             placeholder="Your Email"
             className="p-3 bg-stone-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400 transition"
           />
           <input
             type="text"
+            name="subject"
             placeholder="Subject"
             className="p-3 bg-stone-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400 transition"
           />
           <textarea
+            name="message"
             placeholder="Your Message"
             rows={4}
             className="p-3 bg-stone-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400 transition"

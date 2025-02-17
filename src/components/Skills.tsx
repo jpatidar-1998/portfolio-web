@@ -55,20 +55,19 @@ const skills = [
 
 export default function Skills() {
   return (
-    <div className="min-h-screen bg-stone-700 text-white p-10 pt-20 flex flex-col items-center">
-      <h2 className="text-3xl font-bold mb-6">🛠️ Technical Skills</h2>
+    <div className="min-h-screen bg-stone-700 text-white p-10 pt-20 flex flex-col items-center sm:mt-10 md:mt-10">
+      <h2 className="text-3xl font-bold sm:mb-10 md:mb-10">
+        🛠️ Technical Skills
+      </h2>
 
-      {/* Skills Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl">
         {skills.map((skill, index) => (
           <div
             key={index}
             className="flex items-center gap-4 p-4 bg-stone-800 rounded-lg shadow-md hover:scale-105 transition-transform"
           >
-            {/* Icon */}
             <div className="text-3xl">{skill.icon}</div>
 
-            {/* Skill Details */}
             <div className="w-full">
               <p className="text-lg font-semibold">{skill.name}</p>
               <div className="w-full bg-stone-600 rounded-full h-2.5 mt-2">

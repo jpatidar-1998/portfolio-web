@@ -1,11 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <div className="h-screen flex justify-center items-center bg-stone-800 text-white p-10">
       <div className="flex items-center w-full max-w-5xl flex-col sm:flex-col md:flex-row">
         <div className="w-full md:w-3/5 p-2 md:p-8">
-          <p className="font-bold sm:text-xl md:text-3xl">👋 Hi, I'm Jaya Patidar!</p>
+          <p className="font-bold sm:text-xl md:text-3xl">
+            👋 Hi, I'm Jaya Patidar!
+          </p>
           <p className="font-semibold sm:text-lg md:text-xl mt-3 text-stone-300">
             🚀 Frontend Developer | JavaScript & React Enthusiast
           </p>
@@ -22,7 +26,10 @@ const HeroSection: React.FC = () => {
           <p className="text-stone-400">
             💡 Let's build something amazing together!
           </p>
-          <button className="mt-6 px-6 py-3 text-white bg-blue-600 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:bg-blue-500">
+          <button
+            className="mt-6 px-6 py-3 text-white bg-blue-600 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:bg-blue-500"
+            onClick={() => navigate("/projects")}
+          >
             View My Work
           </button>
         </div>

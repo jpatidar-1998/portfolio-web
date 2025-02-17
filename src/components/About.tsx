@@ -3,13 +3,13 @@ import { FaGraduationCap, FaDownload } from "react-icons/fa";
 export default function About() {
   return (
     <div className="min-h-screen bg-stone-700 text-white text-left mt-10 px-10 py-10 flex flex-col items-center">
-      <div className="max-w-4xl w-full">
+      <div className="max-w-4xl w-full sm:mt-10 md:mt-10">
         <div className="mb-10">
           <h2 className="flex items-center text-2xl font-bold">👩‍💻 About Me</h2>
           <p className="font-normal mt-4 text-stone-300 leading-relaxed">
             Hello! I’m <b>Jaya Patidar</b>, a passionate Frontend Developer with
             a knack for creating intuitive, responsive, and user-friendly web
-            applications. With expertise in{" "}
+            applications. With expertise in
             <b>JavaScript, TypeScript, React.js, and Next.js</b>, I focus on
             delivering seamless digital experiences that make an impact. My goal
             is to constantly learn and innovate, transforming ideas into elegant
@@ -71,7 +71,7 @@ export default function About() {
 
         <div className="mt-8 text-center">
           <a
-            href="/Jaya-Patidar-2-2.pdf"
+            href="/Jaya Patidar.pdf"
             download
             className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 rounded-lg shadow-md text-white hover:bg-blue-500 transition-transform transform hover:scale-105"
           >
