@@ -7,6 +7,15 @@ const projects = [
     image: "/portfolio-img.png",
     liveLink: " https://portfolio-web-green-three.vercel.app/",
     codeLink: "https://github.com/jpatidar-1998/portfolio-web"
+  },
+  {
+    name: "Login Form UI",
+    description:
+      "A login page is a user interface for authenticating users by entering credentials like username and password to access a system or application.",
+    technologies: ["HTML", "CSS"],
+    image: "/login.png",
+    liveLink: "https://github.com/jpatidar-1998/Login-form",
+    codeLink: "https://github.com/jpatidar-1998/Login-form"
   }
 ];
 
