@@ -13,6 +13,7 @@ function App() {
     <>
       <BrowserRouter>
         <div className="root">
+          <div className="container">
           <Navbar />
           <Routes>
             <Route path="/" element={<HeroSection />} />
@@ -23,6 +24,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
           <Footer />
+          </div>
         </div>
       </BrowserRouter>
     </>

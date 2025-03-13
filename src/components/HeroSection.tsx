@@ -4,10 +4,10 @@ import { useNavigate } from "react-router-dom";
 const HeroSection: React.FC = () => {
   const navigate = useNavigate();
   return (
-    <div className="h-screen flex justify-center items-center bg-stone-800 text-white p-10">
+    <div className="h-screen w-full flex justify-center items-center bg-stone-800 text-white p-10">
       <div className="flex items-center w-full max-w-5xl flex-col sm:flex-col md:flex-row">
         <div className="w-full md:w-3/5 p-2 md:p-8">
-          <p className="font-bold sm:text-xl md:text-3xl">
+          <p className="animate-bounce text-3xl font-bold sm:text-xl md:text-3xl">
             👋 Hi, I'm Jaya Patidar!
           </p>
           <p className="font-semibold sm:text-lg md:text-xl mt-3 text-stone-300">
